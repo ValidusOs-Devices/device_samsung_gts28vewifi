@@ -1,9 +1,10 @@
 $(call inherit-product, device/samsung/gts28vewifi/full_gts28vewifi.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/cm/config/common_full_tablet_wifionly.mk)
+# Inherit some common Tesla stuff.
+$(call inherit-product, vendor/tesla/config/common_full_tablet_wifionly.mk)
+$(call inherit-product, vendor/tesla/config/caf_fw.mk)
 
-PRODUCT_NAME := lineage_gts28vewifi
+PRODUCT_NAME := tesla_gts28vewifi
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_DEVICE := gts28vewifi
